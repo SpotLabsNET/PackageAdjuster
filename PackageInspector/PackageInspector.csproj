@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\ProgramData\SpotLabs\Utilities\mum\PackageInspector.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECD5AF74-52B4-4345-B220-6CCBC780CFCF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>PackageInspector</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>PackageInspector</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.8.0</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ListViewColumnSorter.cs" />
+    <Compile Include="PleaseWaitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="FoundItem.cs" />
+    <Compile Include="FindDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Controls\IItemViewer.cs" />
+    <Compile Include="Controls\TreeListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\IFindNavigator.cs" />
+    <Compile Include="Controls\SmiSettingsTreeListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MumTreeListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FileListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RegistryKeyValueControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\GenericCommandsTreeListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ComponentListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DependencyListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ComponentEventArgs.cs" />
+    <Compile Include="Controls\NavigationStatus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox.resx" />
+    <EmbeddedResource Include="CloseConfirm.resx" />
+    <EmbeddedResource Include="Controls\ComponentListControl.resx" />
+    <EmbeddedResource Include="Controls\DependencyListControl.resx" />
+    <EmbeddedResource Include="Controls\FileListControl.resx" />
+    <EmbeddedResource Include="Controls\GenericCommandsTreeListControl.resx" />
+    <EmbeddedResource Include="Controls\MumTreeListControl.resx" />
+    <EmbeddedResource Include="Controls\RegistryKeyValueControl.resx" />
+    <EmbeddedResource Include="Controls\SmiSettingsTreeListControl.resx" />
+    <EmbeddedResource Include="Controls\TreeListControl.resx" />
+    <EmbeddedResource Include="FindDialog.resx" />
+    <EmbeddedResource Include="PackageViewer.resx" />
+    <EmbeddedResource Include="PleaseWaitDialog.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PackageAnalyzer\PackageAnalyzer.csproj">
+      <Project>{3fcbfebf-a5ee-4d47-a35d-2c0e1a0cd217}</Project>
+      <Name>PackageAnalyzer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

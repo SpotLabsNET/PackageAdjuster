@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26206.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageAnalyzer", "PackageAnalyzer\PackageAnalyzer.csproj", "{3FCBFEBF-A5EE-4D47-A35D-2C0E1A0CD217}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageInspector", "PackageInspector\PackageInspector.csproj", "{ECD5AF74-52B4-4345-B220-6CCBC780CFCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FCBFEBF-A5EE-4D47-A35D-2C0E1A0CD217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FCBFEBF-A5EE-4D47-A35D-2C0E1A0CD217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FCBFEBF-A5EE-4D47-A35D-2C0E1A0CD217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FCBFEBF-A5EE-4D47-A35D-2C0E1A0CD217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECD5AF74-52B4-4345-B220-6CCBC780CFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECD5AF74-52B4-4345-B220-6CCBC780CFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECD5AF74-52B4-4345-B220-6CCBC780CFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECD5AF74-52B4-4345-B220-6CCBC780CFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
